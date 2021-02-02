@@ -1,0 +1,44 @@
+.parent{
+    position: relative;;
+    width:100vw;
+    height:100vh;
+}
+
+.child, .buttons, .child2{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    height:100vh;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    z-index:3;
+    width:49vw;
+    height:47vh;
+    background-color:transparent;
+
+}
+.words{
+    z-index:2;
+    width:49vw;
+    height:47vh;
+    background-color: cornflowerblue;
+    border-style: dotted;
+    border-color: darkblue;
+}
+
+.pictures{
+    z-index:1;
+    width:49vw;
+    height:47vh;
+    background-color:darkseagreen;
+    border-style: dotted;
+    border-color:green;
+}
+
+
+
+
