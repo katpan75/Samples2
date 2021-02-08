@@ -1,44 +1,103 @@
-.parent{
-    position: relative;;
-    width:100vw;
-    height:100vh;
+h2{
+    color:transparent;
 }
-
-.child, .buttons, .child2{
-    position: absolute;
-    top:0;
-    left:0;
-    display:flex;
-    height:100vh;
-    flex-flow:row wrap;
-    align-items: center;
-    justify-content: center;
+h1{
+    margin-left: 1vw;
+    font-family: uniwars, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:gray;
+    text-decoration: overline;
+}
+p{
+    position:absolute;
+    margin:3vw;
+    background-color: transparent;
+    display:none;
+    font-family: video, serif;
+    font-weight: 400;
+    font-style: normal;
+    color:gray;
 }
 .button{
-    z-index:3;
-    width:49vw;
-    height:47vh;
-    background-color:transparent;
-
-}
-.words{
     z-index:2;
-    width:49vw;
-    height:47vh;
-    background-color: cornflowerblue;
-    border-style: dotted;
-    border-color: darkblue;
+    position:absolute;
+    width:1vw;
+    height:44vh;
+    background-color:gray;
+    border-style:solid;
+    border-color:gray;
 }
-
-.pictures{
+.button:hover{
+    background-color:yellow;
+}
+.position{
     z-index:1;
-    width:49vw;
-    height:47vh;
-    background-color:darkseagreen;
-    border-style: dotted;
-    border-color:green;
+    position: absolute;
+    width: 48vw;
+    height: 44vh;
+    background-color:#ffe6ff;
+    border-style:solid;
+    border-color: gray;
+}
+.position.D, .slideshow.d{
+    height:120vh;
+}
+.position.D p{
+    bottom:0;
+}
+.position.D p{
+    align-self:flex-end;
 }
 
+.button.dd, .button.ee{
+    height:2vh;
+    width:48vw;
+}
+.position.E, .slideshow.e{
+    height:76vh;
 
+}
 
+.slideshow{
+    overflow:scroll;
+    z-index:0;
+    position: absolute;
+    width: 48vw;
+    height: 44vh;
+    border-style:dotted;
+    border-color:thistle;
+}
 
+img{
+    display:inline-block;
+    max-width:100%;
+
+}
+
+.A,.a, .aa{
+
+    top:13vh;
+    right:50vw;
+}
+
+.B, .b, .bb{
+    top:13vh;
+    right:2vw;
+}
+
+.C, .c, .cc{
+   
+    top: 57vh;
+    right:50vw;
+}
+
+.D, .d, .dd{
+    top:57vh;
+    right:2vw;
+}
+
+.E, .e, .ee{
+    top:101vh;
+    right:50vw;
+}
