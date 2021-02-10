@@ -2,14 +2,17 @@ h2{
     color:transparent;
 }
 h1{
+    text-align: center;
+    font-size:2vmax;
     margin-left: 1vw;
     font-family: uniwars, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color:gray;
+    color:black;
     text-decoration: overline;
 }
 p{
+    font-size:1vmax;
     position:absolute;
     margin:3vw;
     background-color: transparent;
@@ -22,26 +25,28 @@ p{
 .button{
     z-index:2;
     position:absolute;
-    width:1vw;
-    height:44vh;
+    width:24vmax;
+    height:0.5vmax;
     background-color:gray;
     border-style:solid;
-    border-color:gray;
+    border-color:black;
 }
 .button:hover{
     background-color:yellow;
 }
+.slideshow:hover{
+    opacity:50%;
+}
 .position{
     z-index:1;
     position: absolute;
-    width: 48vw;
-    height: 44vh;
-    background-color:#ffe6ff;
+    width: 24vmax;
+    height: 14vmax;
     border-style:solid;
-    border-color: gray;
+    border-color:black;
 }
 .position.D, .slideshow.d{
-    height:120vh;
+    height:24vmax;
 }
 .position.D p{
     bottom:0;
@@ -51,11 +56,16 @@ p{
 }
 
 .button.dd, .button.ee{
-    height:2vh;
-    width:48vw;
+    height:0.5vmax;
+    width:24vmax;
 }
 .position.E, .slideshow.e{
-    height:76vh;
+    height:22vmax;
+
+}
+
+.position.F, .position.G, .slideshow.f, .slideshow.g{
+    height:6vmax;
 
 }
 
@@ -63,8 +73,8 @@ p{
     overflow:scroll;
     z-index:0;
     position: absolute;
-    width: 48vw;
-    height: 44vh;
+    width: 24vmax;
+    height: 22vmax;
     border-style:dotted;
     border-color:thistle;
 }
@@ -77,27 +87,37 @@ img{
 
 .A,.a, .aa{
 
-    top:13vh;
-    right:50vw;
+    top:5.5vmax;
+    right:50.2vmax;
 }
 
 .B, .b, .bb{
-    top:13vh;
-    right:2vw;
+    top:5.5vmax;
+    right:26vmax;
 }
 
 .C, .c, .cc{
    
-    top: 57vh;
-    right:50vw;
+    top:19.5vmax;
+    right:50.2vmax;
 }
 
 .D, .d, .dd{
-    top:57vh;
-    right:2vw;
+    top:19.5vmax;
+    right:26vmax;
 }
 
 .E, .e, .ee{
-    top:101vh;
-    right:50vw;
+    top:33.5vmax;
+    right:50.2vmax;
+}
+
+.F, .f, .ff{
+    top:43.5vmax;
+    right:26vmax;
+}
+
+.G, .g, .gg{
+    top:49.5vmax;
+    right:26vmax;
 }

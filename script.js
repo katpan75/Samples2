@@ -1,13 +1,13 @@
 $(function(){
-
+let x = 0;
 $(".button.aa").click(function(){
-    $(".position.A").animate({width: 'toggle'});
+    $(".position.A").slideToggle();
 });
 $(".button.bb").click(function(){
-    $(".position.B").animate({width: 'toggle'});
+    $(".position.B").slideToggle();
 });
 $(".button.cc").click(function(){
-    $(".position.C").animate({width: 'toggle'});
+    $(".position.C").slideToggle();
 });
 $(".button.dd").click(function(){
     $(".position.D").slideToggle();
@@ -17,7 +17,15 @@ $(".button.ee").click(function(){
     $(".position.E").slideToggle();
     
 });
-
+$(".button.ff").click(function(){
+    $(".position.F").slideToggle();
+    
+});
+$(".button.gg").click(function(){
+    $(".position.G").slideToggle();
+    
+});
+/*
 $(".button.aa").click(function(){
     $(".position.B h2").toggle();
     $(".position.B p").html("<h1>Machine Knitting Samples</h1>").toggle();
@@ -57,5 +65,37 @@ $(".button.ee").click(function(){
     $(".position.D h2").toggle();
     $(".position.D p").html("<h1>Project: Day in the Life of, a Study of Blocking</h1>Spring 2019, using one fixed design screen and one blank screen. The prints focus on color choice and blocking techniques.").toggle();
 });
+*/
+
+
+$(".slideshow.a").click(function(){
+    window.location = "https://luckyman.cargo.site/Machine-Knitting-Samples";
+    
+});
+$(".slideshow.b").click(function(){
+    window.location = "https://luckyman.cargo.site/Hand-Woven-Samples";
+    
+});
+$(".slideshow.c").click(function(){
+    window.location = "https://luckyman.cargo.site/Dobby-Woven-Samples";
+    
+});
+$(".slideshow.d").click(function(){
+    window.location = "https://luckyman.cargo.site/Sculptural-Stocking";
+    
+});
+$(".slideshow.e").click(function(){
+    window.location = "https://luckyman.cargo.site/Day-in-the-Life-of-a-Study-of-Blocking";
+    
+});
+/*
+$(".slideshow.f").click(function(){
+    window.location = "";
+    
+});
+$(".slideshow.g").click(function(){
+    window.location = "";
+});
+*/
 
 });
