@@ -1,0 +1,14 @@
+{
+    "background": [
+        {
+            "image":"url('../shelf/background2.png')",
+            "border":"teal"
+        },
+        {
+            "image":"url('../shelf/background.png')",
+            "border":"black"
+        }
+
+    ]
+ }
+ 

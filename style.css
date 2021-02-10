@@ -1,123 +1,51 @@
-h2{
-    color:transparent;
+.container {
+    display:grid;
+    width:100vw;
+    height:99vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    background-image:url("shelf/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property:background-image;
+    transition-duration:200ms;
+
+}
+.element{
+    background-color:transparent;
+    border-style:solid;
+    border-color:black;
+    border-width: 0.5vmax;
+    padding:2vmax;
+    transition-property: background-color;
+    transition-duration: 500ms;
 }
 h1{
-    text-align: center;
-    font-size:2vmax;
-    margin-left: 1vw;
+    color:black;
     font-family: uniwars, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color:black;
+    visibility: hidden;
+    transition-property: visibility;
+    transition-duration: 200ms;
     text-decoration: overline;
 }
-p{
-    font-size:1vmax;
-    position:absolute;
-    margin:3vw;
-    background-color: transparent;
-    display:none;
-    font-family: video, serif;
-    font-weight: 400;
-    font-style: normal;
-    color:gray;
+.element.name, .element.name h1{
+    background-color:lightgray;
+    visibility: visible;
 }
-.button{
-    z-index:2;
-    position:absolute;
-    width:24vmax;
-    height:0.5vmax;
-    background-color:gray;
-    border-style:solid;
-    border-color:black;
+.element.about:hover, .element.knitting1:hover, .element.weaving1:hover,
+.element.dobby:hover, .element.pants:hover, .element.venice:hover,
+.element.lichen:hover{
+    background-color:white;
 }
-.button:hover{
-    background-color:yellow;
+.element:hover h1{
+    visibility: visible;
 }
-.slideshow:hover{
-    opacity:50%;
-}
-.position{
-    z-index:1;
-    position: absolute;
-    width: 24vmax;
-    height: 14vmax;
-    border-style:solid;
-    border-color:black;
-}
-.position.D, .slideshow.d{
-    height:24vmax;
-}
-.position.D p{
-    bottom:0;
-}
-.position.D p{
-    align-self:flex-end;
+.element.name:hover h1{
+    color:teal;
 }
 
-.button.dd, .button.ee{
-    height:0.5vmax;
-    width:24vmax;
-}
-.position.E, .slideshow.e{
-    height:22vmax;
 
-}
 
-.position.F, .position.G, .slideshow.f, .slideshow.g{
-    height:6vmax;
-
-}
-
-.slideshow{
-    overflow:scroll;
-    z-index:0;
-    position: absolute;
-    width: 24vmax;
-    height: 22vmax;
-    border-style:dotted;
-    border-color:thistle;
-}
-
-img{
-    display:inline-block;
-    max-width:100%;
-
-}
-
-.A,.a, .aa{
-
-    top:5.5vmax;
-    right:50.2vmax;
-}
-
-.B, .b, .bb{
-    top:5.5vmax;
-    right:26vmax;
-}
-
-.C, .c, .cc{
-   
-    top:19.5vmax;
-    right:50.2vmax;
-}
-
-.D, .d, .dd{
-    top:19.5vmax;
-    right:26vmax;
-}
-
-.E, .e, .ee{
-    top:33.5vmax;
-    right:50.2vmax;
-}
-
-.F, .f, .ff{
-    top:43.5vmax;
-    right:26vmax;
-}
-
-.G, .g, .gg{
-    top:49.5vmax;
-    right:26vmax;
-}

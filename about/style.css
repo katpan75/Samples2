@@ -1,0 +1,65 @@
+.container {
+    display:grid;
+    width:100vw;
+    height:99vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 5fr 1fr;
+    background-image:url("../shelf/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: background-image;
+    transition-duration: 200ms;
+
+}
+.bottom{
+    background-color:transparent;
+    border-style:solid;
+    border-color:black;
+    border-width: 0.5vmax;
+}
+.element{
+    background-color:transparent;
+    overflow:scroll;
+    padding:2vmax;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+.element.info, .element.contact{
+    background-color:white;
+}
+.element.name, .element.about{
+    border-style:solid;
+    border-color:black;
+    border-width: 0.5vmax;
+}
+.element.about{
+    background-color:lightgray;
+}
+.element.name h1{
+    visibility:hidden;
+}
+.element.name:hover{
+    background-color: white;
+}
+.element.name:hover h1{
+    visibility:visible;
+}
+h1{
+    color:black;
+    font-family: uniwars, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: overline;
+    transition-property: visibility;
+    transition-duration: 200ms;
+}
+p{
+    font-family: industry-inc-base, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:30px;
+}
+.element.about:hover h1{
+    color:teal;
+}
